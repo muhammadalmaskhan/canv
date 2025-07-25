@@ -103,22 +103,20 @@
     <h1 style='text-align: center; margin: 0.67em;'><a id='title-name'></a></h1>
     <h1>Co-Authorship Network</h1>
 
-    <p>This is a visualization of <span id='network-name'></span>'s co-authorship network (<span
+    <!-- <p>This is a visualization of <span id='network-name'></span>'s co-authorship network (<span
             id='co-author-number'></span> co-authors, data from DBLP). You can try to create yours <a
             href='https://github.com/Xovee/canv'>here</a>. The color and size of nodes indicate collaboration frequency.
-    </p>
+    </p> -->
 
-    <p id='my-canv-input'>
-        <input id='show-all-names' type='checkbox'> <label for='show-all-names'>Show all co-author names</label>
-        <input id='show-frequent-co-authors' type='checkbox' checked> <label for='show-frequent-co-authors'>Show
-            frequent co-authors</label>
+    <!-- <p id='my-canv-input'>
+        <input id='show-all-names' type='checkbox' checked> <label for='show-all-names'>Show all co-author names</label>
+        <input id='show-frequent-co-authors' type='checkbox' checked> <label for='show-frequent-co-authors'>Show frequent co-authors</label>
         <span id='show-certain-author-container'><label id='show-certain-author'> Search co-author</label></span>
-    </p>
+    </p> -->
 
 
 
-
-
+C:\Users\Almas\Downloads\spain\muhammadalmaskhan.github.io\CoAuth
 
 
 
@@ -2948,22 +2946,22 @@
             }
         });
 
-        function xoveeDefinedFunctions() {
-            // canv
-            document.getElementById('webweb-menu').style.display = 'none';
-            document.getElementById('show-all-names').addEventListener('click', function (event) {
-                document.getElementById('showNodeNames-widget').click();
-            })
-            document.getElementById('show-frequent-co-authors').addEventListener('click', function (event) {
-                document.getElementById('showFrequentCoAuthors-widget').click();
-            })
-            document.getElementById('show-certain-author').insertAdjacentElement('beforebegin', document.getElementById('nameToMatch-widget'))
+        // function xoveeDefinedFunctions() {
+        //     // canv
+        //     document.getElementById('webweb-menu').style.display = 'none';
+        //     document.getElementById('show-all-names').addEventListener('click', function (event) {
+        //         document.getElementById('showNodeNames-widget').click();
+        //     })
+        //     document.getElementById('show-frequent-co-authors').addEventListener('click', function (event) {
+        //         document.getElementById('showFrequentCoAuthors-widget').click();
+        //     })
+        //     document.getElementById('show-certain-author').insertAdjacentElement('beforebegin', document.getElementById('nameToMatch-widget'))
 
-            document.getElementById('co-author-number').innerHTML = webweb.display.numberCoAuthor
-            document.getElementById('title-name').innerHTML = webweb.display.displayName
-            document.getElementById('network-name').innerHTML = webweb.display.displayName
+        //     document.getElementById('co-author-number').innerHTML = webweb.display.numberCoAuthor
+        //     document.getElementById('title-name').innerHTML = webweb.display.displayName
+        //     document.getElementById('network-name').innerHTML = webweb.display.displayName
 
-        }
+        // }
     </script>
 
 </body>
